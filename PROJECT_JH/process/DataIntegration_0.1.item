@@ -223,14 +223,14 @@
       <column comment="" key="false" length="-1" name="date" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="time" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="duration" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="customerid" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="BUSID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="customerid" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BUSNAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ADDRESSLINE1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SUBURB" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="POSTCODE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="STATE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="BUSNO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSNO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FIRSTNAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LASTNAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ADDR1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -246,14 +246,14 @@
         <mapperTableEntries expression="row1.date " name="date" type="id_String"/>
         <mapperTableEntries expression="row1.time " name="time" type="id_String"/>
         <mapperTableEntries expression="row1.duration " name="duration" type="id_String"/>
-        <mapperTableEntries expression="row1.customerid " name="customerid" type="id_Integer"/>
-        <mapperTableEntries expression="row2.BUSID " name="BUSID" type="id_Integer"/>
+        <mapperTableEntries expression="row1.customerid " name="customerid" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.BUSID " name="BUSID" type="id_BigDecimal"/>
         <mapperTableEntries expression="row2.BUSNAME " name="BUSNAME" type="id_String"/>
         <mapperTableEntries expression="row2.ADDRESSLINE1 " name="ADDRESSLINE1" type="id_String"/>
         <mapperTableEntries expression="row2.SUBURB " name="SUBURB" type="id_String"/>
         <mapperTableEntries expression="row2.POSTCODE " name="POSTCODE" type="id_String"/>
         <mapperTableEntries expression="row2.STATE " name="STATE" type="id_String"/>
-        <mapperTableEntries expression="row3.BUSNO " name="BUSNO" type="id_Integer"/>
+        <mapperTableEntries expression="row3.BUSNO " name="BUSNO" type="id_BigDecimal"/>
         <mapperTableEntries expression="row3.FIRSTNAME " name="FIRSTNAME" type="id_String"/>
         <mapperTableEntries expression="row3.LASTNAME " name="LASTNAME" type="id_String"/>
         <mapperTableEntries expression="row3.ADDR1 " name="ADDR1" type="id_String"/>
@@ -267,14 +267,14 @@
         <mapperTableEntries expression="Var.date " name="date" type="id_String"/>
         <mapperTableEntries expression="Var.time " name="time" type="id_String"/>
         <mapperTableEntries expression="Var.duration " name="duration" type="id_String"/>
-        <mapperTableEntries expression="Var.customerid " name="customerid" type="id_Integer"/>
-        <mapperTableEntries expression="Var.BUSID " name="BUSID" type="id_Integer"/>
+        <mapperTableEntries expression="Var.customerid " name="customerid" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Var.BUSID " name="BUSID" type="id_BigDecimal"/>
         <mapperTableEntries expression="Var.BUSNAME " name="BUSNAME" type="id_String"/>
         <mapperTableEntries expression="Var.ADDRESSLINE1 " name="ADDRESSLINE1" type="id_String"/>
         <mapperTableEntries expression="Var.SUBURB " name="SUBURB" type="id_String"/>
         <mapperTableEntries expression="Var.POSTCODE " name="POSTCODE" type="id_String"/>
         <mapperTableEntries expression="Var.STATE " name="STATE" type="id_String"/>
-        <mapperTableEntries expression="Var.BUSNO " name="BUSNO" type="id_Integer"/>
+        <mapperTableEntries expression="Var.BUSNO " name="BUSNO" type="id_BigDecimal"/>
         <mapperTableEntries expression="Var.FIRSTNAME " name="FIRSTNAME" type="id_String"/>
         <mapperTableEntries expression="Var.LASTNAME " name="LASTNAME" type="id_String"/>
         <mapperTableEntries expression="Var.ADDR1 " name="ADDR1" type="id_String"/>
@@ -665,14 +665,14 @@
       <column comment="" key="false" length="-1" name="date" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="time" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="duration" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="customerid" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="BUSID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="customerid" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BUSNAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ADDRESSLINE1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SUBURB" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="POSTCODE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="STATE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="BUSNO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSNO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FIRSTNAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LASTNAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ADDR1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -686,14 +686,14 @@
       <column comment="" key="false" length="-1" name="date" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="time" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="duration" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="customerid" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="BUSID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="customerid" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BUSNAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ADDRESSLINE1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SUBURB" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="POSTCODE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="STATE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="BUSNO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="BUSNO" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FIRSTNAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LASTNAME" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ADDR1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -739,13 +739,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d503509c-d759-4037-8004-1cdc9f5c9fd4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pglg/2FcGxh9APrgdSR79LgaY9SazX1lv+/AOGh59GogDg+1ER0ruF4c8BRQG/E+HR1vKLgvap9x&#13;
-vAZaUUe8ew==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_00af183b-2377-41dc-87d7-9dc96670cd76"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gWgHrFzjXgsUa/qbdNsqABLGReYnjD9/nUbcVnZ+czlMkT+8AM4G7pIVg4SC+YXm7wKqYWmLgp4x&#13;
-GuFPTJhtnQ==</DigestValue></Reference></SignedInfo><SignatureValue>iQyzqxmIRwp948UMeqrFcvb/cT3/+dtW9imGrwAOL+DhsRsDtM6si25RvPb/KM+EK/DmB4R7/EAV&#13;
-VFc0dBw3aGI6MN/oEuhrCRXn8GnE4T6oxqnKZrt/WMVhiwYy44fLMgho2zxjN/II+oDjk/PUWNV9&#13;
-0/7d3d4lZeYOIBvdAAuE+VbuboJHe+vXn1sFHPysOLQvtNHMNDa53fbRluoXfm7JMIzJF8t8sphq&#13;
-jUuC4/Ji/YpfPVXmQgi7x1cW9+AumyFs8L6AIeRIM5QjWYYmgkwC1deqC/Ph0n4cKyBZj+IA3S9s&#13;
-ZnOWSahGMJNDVnYalOYGy0VfNsc0QZGm6oVurw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2aad6ff0-f494-477e-ba53-f8edbf60af0f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eSnGFrtFB9gDAepe5odnIha39wy6VCk0rMXZku8xaE5wtmdnlgfwh0ePOuY2ywTE9PR4T+AqgKpn&#13;
+XRlowDu2MA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_11e082a6-8441-40d5-847c-95df2dd95f73"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+Rd/7Nj/b3GHiRu9jxMs8jeCj9IavoWFzCjW1SkDoBgvBW8139zOIVwme/EK8P5CLnDWF5YILF1o&#13;
+fzU2EBelVg==</DigestValue></Reference></SignedInfo><SignatureValue>A8bIWpu8eb06ZdFud3FF8W9ga1QAiorv8S95pSMIVxGUHB6PcMb5ZZykvKfggl7SLeGQw82w+9ur&#13;
+nRnwPqTgBo/e6wRzLeEtdcN2zIBCjbUG9lxSn7UOio0JuEMYODjtt38w7JD9FHJ1XYdJLDBNga6k&#13;
+aHNht5NdsUtlR9SLUFJjkL5vsN/K6U1u7ZWy1jKIAI20WX0VHkjG0mGleXEQtNiNIC0RoxXACGrb&#13;
+wgrZngczO5UmfxG+iwQu86YG7J5lJ0ZVTihkT0IU8e/pPCGQ2oggsClAKrH/o5dIZsOQqkw4zeCH&#13;
+UAQq7tFesWC84+JIXoG5WaEYOsOpWgP/sByHUA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -767,4 +767,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_00af183b-2377-41dc-87d7-9dc96670cd76" Target="#_d503509c-d759-4037-8004-1cdc9f5c9fd4"><Timestamp>2024-03-27 06:00:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_11e082a6-8441-40d5-847c-95df2dd95f73" Target="#_2aad6ff0-f494-477e-ba53-f8edbf60af0f"><Timestamp>2024-03-27 06:00:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

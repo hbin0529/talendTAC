@@ -242,8 +242,7 @@
         <mapperTableEntries name="duration" nullable="true" type="id_String"/>
         <mapperTableEntries name="customerid" nullable="true" type="id_Integer"/>
       </inputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1.callid " name="callid" nullable="true" type="id_Float"/>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries name="BUSID" nullable="true" type="id_BigDecimal"/>
         <mapperTableEntries name="BUSNAME" nullable="true" type="id_String"/>
         <mapperTableEntries name="ADDRESSLINE1" nullable="true" type="id_String"/>
@@ -251,8 +250,8 @@
         <mapperTableEntries name="POSTCODE" nullable="true" type="id_String"/>
         <mapperTableEntries name="STATE" nullable="true" type="id_String"/>
       </inputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row2.callid " name="CUSTNO" nullable="true" operator="=" type="id_BigDecimal"/>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="" name="CUSTNO" nullable="true" type="id_BigDecimal"/>
         <mapperTableEntries name="BUSNO" nullable="true" type="id_BigDecimal"/>
         <mapperTableEntries name="FIRSTNAME" nullable="true" type="id_String"/>
         <mapperTableEntries name="LASTNAME" nullable="true" type="id_String"/>
@@ -312,8 +311,6 @@
     <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="callid"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="BUSID"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="BUSNAME"/>
@@ -332,7 +329,6 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="BUSINESS_JHWA" name="tDBInput_1">
-      <column comment="" key="true" length="18" name="callid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="11" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="38" name="BUSID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -518,13 +514,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e3a1e890-0455-4b3a-98c2-5d52c59e172a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>juhoY0galqcbIAgmGEqVf3d6GO5bcxzyKSKAy8TaduLAsg+naNQH9QkoofN0OacKqg7TZiUhxtgv&#13;
-qooZOJxC9A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6d70a0f6-7a97-407b-8e39-7875de739665"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DEfVJzFtrNKqUKr8tt4tUPwlk8gYRUr6+X3GdRUbTOmNqDtpAaFqlJvVE7xOmK3XqPjZ19qCYtJs&#13;
-uxtSCP+BjA==</DigestValue></Reference></SignedInfo><SignatureValue>la7Sp3SZltkBsmjhfJF3Xw6y6cKntsgoqvw2qyxfQJQ5221AcqnvJoyq+Td6Ua6SAmM8R9eszFg8&#13;
-WgAMHQIeYSc75LkhY+XIGZp3MRqvA6V7bMG33XE9pjoRf9gwwD2cZXajKIte3QuIIUKrHcn6VZEV&#13;
-gsnd9tBvzCg3ubxeO62HHUlv10nCeIRtG5xoUJwr/2hf0zuKtxYB/Vkb1xpj481tqVSJ00IrsoYR&#13;
-kzR3sv95lAZxHi9gD4oI3LHxR92eU0UKrrHXXbOIXPRem0Q34WTRl/R1EZciyvV8IIamdAEcSuUE&#13;
-gduKT1cD3VFJmJm7M+B61qPjWwC3kUZ+hnXoWw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a0610049-2655-4ab7-9cbd-eaa0ade05fcb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fNYt7XRuRDxUyPn6QxUwhFrS9mqp7JzA526eItat4GUlQGytJF4wKMIUQ9yerElGvxA6+OtTck+y&#13;
+BR5g6STGgQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_abfb5b0b-d557-496b-91f1-716a3464eb5c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>t2ekMjgO45no+JkHiUo0IGAMgiIZ0j/uvHC6VD4PVgg1+tLLmR4Cr11iZps0zBOcHzDxTBpaEoZN&#13;
+Lp+f+YjcAA==</DigestValue></Reference></SignedInfo><SignatureValue>QpKiSHMQgZ1YkMv7CJ/jWJfj1hyWv4XoUyKPH9HBIv1wN+vHpINbfY6wjaHH+bEcFlGonIZpSecf&#13;
+xcv2t71fE8ymsxaFnkHQH0SlSFjj4X4nYILnS4EoDbRE9ueDBh/B6xCoXEqtsbvCNVs4F/EmbzZo&#13;
+lRc2mSn3hSQ+klL96Ky8on1zo/tTJVzG6YoCy8lstSgPxnzYXk/QAN5++EMIDISzwX1laAYz7yyR&#13;
+indaO1VB7JVjr1796kxyE1Dxl6WshBXjuYIikYiPF99vh3qgmUQdmUx0DU/tgmQ76o9ZntbpQ/OX&#13;
+vWFTBzsDY8T9W5pYMrF4VagBrpyWaRNN4/qXlg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -546,4 +542,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6d70a0f6-7a97-407b-8e39-7875de739665" Target="#_e3a1e890-0455-4b3a-98c2-5d52c59e172a"><Timestamp>2024-03-27 06:03:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_abfb5b0b-d557-496b-91f1-716a3464eb5c" Target="#_a0610049-2655-4ab7-9cbd-eaa0ade05fcb"><Timestamp>2024-03-27 06:04:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

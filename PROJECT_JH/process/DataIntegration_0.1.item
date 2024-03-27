@@ -219,27 +219,21 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="out1">
-      <column comment="" defaultValue="" key="false" length="-1" name="callid" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="date" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="time" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="duration" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="customerid" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="callid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="11" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="duration" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="customerid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1.callid " name="callid" type="id_Float"/>
-        <mapperTableEntries expression="row1.date " name="date" type="id_String"/>
-        <mapperTableEntries expression="row1.time " name="time" type="id_String"/>
-        <mapperTableEntries expression="row1.duration " name="duration" type="id_String"/>
-        <mapperTableEntries expression="row1.customerid " name="customerid" type="id_Integer"/>
-      </varTables>
+      <varTables name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var.callid " name="callid" type="id_Float"/>
-        <mapperTableEntries expression="Var.date " name="date" type="id_String"/>
-        <mapperTableEntries expression="Var.time " name="time" type="id_String"/>
-        <mapperTableEntries expression="Var.duration " name="duration" type="id_String"/>
-        <mapperTableEntries expression="Var.customerid " name="customerid" type="id_Integer"/>
+        <mapperTableEntries expression="row1.callid " name="callid" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row1.date " name="date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.time " name="time" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.duration " name="duration" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.customerid " name="customerid" nullable="true" type="id_Integer"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="callid" nullable="true" type="id_Float"/>
@@ -491,11 +485,11 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="tLogRow_1">
-      <column comment="" defaultValue="" key="false" length="-1" name="callid" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="date" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="time" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="duration" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="customerid" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="callid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="11" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="duration" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="customerid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
@@ -524,13 +518,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0c91eacb-f5bc-4e72-8432-1f88bde686bc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wHcQoM5iNm+Uyi4MwprqlURR/Z3nT35S0R4aq8Iq0cCKAA0rB+7cQ+JCEcN4cfVoPB3T3E8a0fRg&#13;
-PrdB1ATazQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_149cbd63-59fb-4fe7-8f0c-68a7e9808fa1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>l8cc45+Lw/Wo/2HnRa9Sjut1BsUHzl6XcwA4quPPumFslx2XLyG3sVviRqulJeJ/1qT7pegwXta+&#13;
-2+Jo7JqhIQ==</DigestValue></Reference></SignedInfo><SignatureValue>n7MP1Vpccy71yHeE9R1tfy+tt7NJojv3hwuHrPRi+vfXHoW4mhNaiVthP8c93U+8sNr595MVWx/3&#13;
-1UANKyNdbejnbqiBzM4O7IqfBFtmLcWEJE8KR5g3e2iSFAy/ahl6+RRL6kUlSg6at3Ukxb8JSOWJ&#13;
-3DfgbRXviW89L9aojyh1rzJ49WUtUXk+s/Q0wSKWi5GYVyO6G97YxfjHVVxdrezmix1IQ6Mlzp37&#13;
-SG/ijJzr3AdE3dAf+HqQ0ZBHuSPrS2G0QRs8834S187YBwblX4Bnr+RfqrVaW/roww3AKnLLAy1A&#13;
-MoZ/YVuisq58FQeN7xrg5r5CoghY+TUw/bWGDA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e3a1e890-0455-4b3a-98c2-5d52c59e172a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>juhoY0galqcbIAgmGEqVf3d6GO5bcxzyKSKAy8TaduLAsg+naNQH9QkoofN0OacKqg7TZiUhxtgv&#13;
+qooZOJxC9A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6d70a0f6-7a97-407b-8e39-7875de739665"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DEfVJzFtrNKqUKr8tt4tUPwlk8gYRUr6+X3GdRUbTOmNqDtpAaFqlJvVE7xOmK3XqPjZ19qCYtJs&#13;
+uxtSCP+BjA==</DigestValue></Reference></SignedInfo><SignatureValue>la7Sp3SZltkBsmjhfJF3Xw6y6cKntsgoqvw2qyxfQJQ5221AcqnvJoyq+Td6Ua6SAmM8R9eszFg8&#13;
+WgAMHQIeYSc75LkhY+XIGZp3MRqvA6V7bMG33XE9pjoRf9gwwD2cZXajKIte3QuIIUKrHcn6VZEV&#13;
+gsnd9tBvzCg3ubxeO62HHUlv10nCeIRtG5xoUJwr/2hf0zuKtxYB/Vkb1xpj481tqVSJ00IrsoYR&#13;
+kzR3sv95lAZxHi9gD4oI3LHxR92eU0UKrrHXXbOIXPRem0Q34WTRl/R1EZciyvV8IIamdAEcSuUE&#13;
+gduKT1cD3VFJmJm7M+B61qPjWwC3kUZ+hnXoWw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -552,4 +546,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_149cbd63-59fb-4fe7-8f0c-68a7e9808fa1" Target="#_0c91eacb-f5bc-4e72-8432-1f88bde686bc"><Timestamp>2024-03-27 06:02:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6d70a0f6-7a97-407b-8e39-7875de739665" Target="#_e3a1e890-0455-4b3a-98c2-5d52c59e172a"><Timestamp>2024-03-27 06:03:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

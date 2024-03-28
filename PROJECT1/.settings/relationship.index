@@ -35,6 +35,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_8HqIcOzXEe6YhqEaGH_N2w",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_EEjxwOzREe6YhqEaGH_N2w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_EEjxwOzREe6YhqEaGH_N2w - TRANSACTION_JUN",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_GNv7oOv8Ee6YhqEaGH_N2w",
     "version" : "0.1",
     "type" : "job"
